@@ -14,9 +14,28 @@
     <!-- Import styles -->
     <link href="./styles/main.css" rel="stylesheet" type="text/css">
     <!-- Icons library -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />  <!-- https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />  <!-- https://iconscout.com/unicons/explore/line -->
 </head>
 <body>
+
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img src="./assets/identity/favicon.png" alt="Logo" title="Andres Orozco Dev">
+        </header>
+        <nav>
+          <button onclick="handleSidebarClicked('Dropdown')">
+            <span>
+              <i class="uil uil-align"></i> 
+              <span>Drop Down</span>
+            </span>
+          </button>
+        </nav>
+    </aside>
+
+    <div class="content" id="Dropdown">
+        Dropdown
+    </div>
     
     <!-- Import JS -->
     <script type="text/javascript" src="./main.js"></script>
