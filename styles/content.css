@@ -1,0 +1,17 @@
+.content {
+    margin-left: 200px;
+    width: calc(100vw - 200px);
+    height: 100vh;
+    background: var(--black);
+    color: var(--white);
+}
+
+#Dropdown {
+    display: none;
+}
+
+@media (width < 580px) { 
+    .content {
+        margin-left: 80px;
+    }
+}
