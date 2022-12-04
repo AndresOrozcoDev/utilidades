@@ -47,7 +47,7 @@
     background: #f2f2f2;
   }
   
-  @media (width < 580px) {
+  @media (width < 480px) {
   
     .sidebar-header {
       margin-bottom: 15px;
