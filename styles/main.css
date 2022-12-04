@@ -1,0 +1,41 @@
+@import '';
+
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--gray-light); 
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--gray-dark); 
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-dark); 
+}
+
+input:hover, input:active, input:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+:root {
+    --white: #FFFFFF;
+    --black: #1a1a1a;
+    --xs: 0.8rem;
+    --sm: 1rem;
+    --md: 1.2rem;
+    --lg: 1.4rem;
+    --xl: 1.6rem;
+}
