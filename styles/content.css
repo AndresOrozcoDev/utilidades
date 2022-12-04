@@ -13,5 +13,6 @@
 @media (width < 580px) { 
     .content {
         margin-left: 80px;
+        width: calc(100vw - 80px);
     }
 }
