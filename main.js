@@ -36,4 +36,6 @@ const toggleDropdown = () => {
   dropdown.classList.toggle("open");
 };
 
-  
+const toggleModal = () => {
+  document.body.classList.toggle("open");
+}

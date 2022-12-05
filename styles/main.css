@@ -1,9 +1,11 @@
 @import './sidebar.css';
 @import './content.css';
 @import './dropdown.css';
+@import './modal.css';
 
 * {
     box-sizing: border-box;
+    font-family: 'Readex Pro', sans-serif;
 }
 
 body {
