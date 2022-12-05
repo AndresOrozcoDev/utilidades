@@ -1,5 +1,6 @@
 @import './sidebar.css';
 @import './content.css';
+@import './dropdown.css';
 
 * {
     box-sizing: border-box;

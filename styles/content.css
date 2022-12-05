@@ -4,10 +4,15 @@
     height: 100vh;
     background: var(--black);
     color: var(--white);
+    display: none;
+    text-align: center;
 }
 
-#Dropdown {
-    display: none;
+.content-center {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
 }
 
 @media (max-width: 480px) { 
