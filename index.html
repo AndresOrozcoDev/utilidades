@@ -30,77 +30,100 @@
             <span>Drop Down</span>
           </span>
         </button>
+        <button onclick="handleSidebarClicked('Modal')">
+          <span>
+            <i class="uil uil-files-landscapes-alt"></i> 
+            <span>Modal</span>
+          </span>
+        </button>
       </nav>
   </aside>
 
-    <div class="content" id="Dropdown">
-      <div class="content-center">
-        <div class="dropdown" id="dropdown">
-          <button onclick="handleDropdownClicked(event)">
-            <span class="material-symbols-outlined"> account_circle </span>
-            David Jackson
-            <span class="chevron material-symbols-outlined"> expand_more </span>
-          </button>
-          <div class="menu">
-            <div id="menu-inner" class="menu-inner">
-              <div class="main-menu">
-                <button onclick="handleSubMenuClicked('my-tools')">
-                  <span class="material-symbols-outlined"> build </span>
-                  My Tools
-                  <span class="chevron material-symbols-outlined">
-                    chevron_right
-                  </span>
-                </button>
-                <button onclick="handleSubMenuClicked('settings')">
-                  <span class="material-symbols-outlined"> settings </span>
-                  Settings
-                  <span class="chevron material-symbols-outlined">
-                    chevron_right
-                  </span>
-                </button>
-                <button>
-                  <span class="material-symbols-outlined"> logout </span>
-                  Logout
-                </button>
-              </div>
-              <div id="my-tools" class="sub-menu">
-                <button onclick="handleSubMenuClicked()">
-                  <span class="material-symbols-outlined"> arrow_back </span>
-                  Back
-                </button>
-                <button>
-                  <span class="material-symbols-outlined"> description </span>
-                  File Manager
-                </button>
-                <button>
-                  <span class="material-symbols-outlined"> cloud_upload </span>
-                  Cloud Upload
-                </button>
-              </div>
-              <div id="settings" class="sub-menu">
-                <button onclick="handleSubMenuClicked()">
-                  <span class="material-symbols-outlined"> arrow_back </span>
-                  Back
-                </button>
-                <button>
-                  <span class="material-symbols-outlined">
-                    settings_night_sight
-                  </span>
-                  Night Mode
-                </button>
-                <button>
-                  <span class="material-symbols-outlined"> notifications </span>
-                  Notifications
-                </button>
-              </div>
+  <div class="content" id="Dropdown">
+    <div class="content-center">
+      <div class="dropdown" id="dropdown">
+        <button onclick="handleDropdownClicked(event)">
+          <span class="material-symbols-outlined"> account_circle </span>
+          David Jackson
+          <span class="chevron material-symbols-outlined"> expand_more </span>
+        </button>
+        <div class="menu">
+          <div id="menu-inner" class="menu-inner">
+            <div class="main-menu">
+              <button onclick="handleSubMenuClicked('my-tools')">
+                <span class="material-symbols-outlined"> build </span>
+                My Tools
+                <span class="chevron material-symbols-outlined">
+                  chevron_right
+                </span>
+              </button>
+              <button onclick="handleSubMenuClicked('settings')">
+                <span class="material-symbols-outlined"> settings </span>
+                Settings
+                <span class="chevron material-symbols-outlined">
+                  chevron_right
+                </span>
+              </button>
+              <button>
+                <span class="material-symbols-outlined"> logout </span>
+                Logout
+              </button>
+            </div>
+            <div id="my-tools" class="sub-menu">
+              <button onclick="handleSubMenuClicked()">
+                <span class="material-symbols-outlined"> arrow_back </span>
+                Back
+              </button>
+              <button>
+                <span class="material-symbols-outlined"> description </span>
+                File Manager
+              </button>
+              <button>
+                <span class="material-symbols-outlined"> cloud_upload </span>
+                Cloud Upload
+              </button>
+            </div>
+            <div id="settings" class="sub-menu">
+              <button onclick="handleSubMenuClicked()">
+                <span class="material-symbols-outlined"> arrow_back </span>
+                Back
+              </button>
+              <button>
+                <span class="material-symbols-outlined">
+                  settings_night_sight
+                </span>
+                Night Mode
+              </button>
+              <button>
+                <span class="material-symbols-outlined"> notifications </span>
+                Notifications
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="content" id="Modal">
+    <div class="content-center">
+      <main class="page-content">
+        <button onclick="toggleModal()" type="button">Open Modal</button>
+      </main>
+      <div class="background" onclick="toggleModal()"></div>
+      <div class="modal">
+        <div class="modal-content">
+          <span>
+            You have opened the modal, they are great for confirming actions or
+            displaying critical information.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
     
-    <!-- Import JS -->
-    <script type="text/javascript" src="./main.js"></script>
+  <!-- Import JS -->
+  <script type="text/javascript" src="./main.js"></script>
     
 </body>
 </html>
